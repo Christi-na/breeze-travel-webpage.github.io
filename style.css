@@ -196,10 +196,16 @@ h3{
 	background: rgba(226, 0, 0, 0.5);
 }
 .layer h3{
-	width: 100%;
-	font-weight: 500;
-	color: white;
 	font-size: 22px;
+	font-weight: 500;
+}
+.layer p{
+	font-size: 16px;
+	font-weight: 800;
+}
+.layer h3, .layer p{
+	width: 100%;
+	color: white;
 	bottom: 0;
 	left: 50%;
 	transform: translateX(-50%);
@@ -207,9 +213,12 @@ h3{
 	opacity: 0;
 	transition: 0.8s;
 }
-
 .layer:hover h3{
 	bottom: 49%;
+	opacity: 1;
+}
+.layer:hover p{
+	bottom: 44%;
 	opacity: 1;
 }
 /*------------facilities---------------*/
