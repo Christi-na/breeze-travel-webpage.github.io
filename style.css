@@ -269,17 +269,26 @@ h3{
 	text-align: left;
 	background: #fff3f3;
 	cursor: pointer;
+	display: flex;
+	flex-direction: column;
+	padding: 25px;
 }
-.testimonial-col div{
-	margin: 25px;
+.testimonial-col:first-child{
+	margin-right: 25px;
+}
+.testimonial__pic{
+	height: 70px;
+	width: 70px;
+	border-radius: 50%;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
 }
 .testimonial-col img{
-	height: 60px;
-	margin: 25px 30px 0px 25px;
-	border-radius: 50%;
+	height: 105%;
 }
-.testimonial-col p{
-	padding: 0;
+.testimonial__author{
+	margin: auto 0 0 0;
 }
 .testimonial-col h3{
 	margin-top: 15px;
