@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.12,
+* Autoprefixer: v10.4.4
+* Browsers: last 4 version
+*/
+
 *{
 	margin: 0;
 	padding: 0;
@@ -9,23 +16,33 @@ html, body{
 .header{
 	min-height: 100vh;
 	width: 100%;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 9, 30, 0.6)), to(rgba(4, 9, 30, 0.6))), url(images/banner-min.jpg);
+	background-image: -o-linear-gradient(rgba(4, 9, 30, 0.6), rgba(4, 9, 30, 0.6)), url(images/banner-min.jpg);
 	background-image: linear-gradient(rgba(4, 9, 30, 0.6), rgba(4, 9, 30, 0.6)), url(images/banner-min.jpg);
 	background-position: center;
 	background-size: cover;
 	position: relative;
 }
 nav{
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	padding: 2% 6%;
-	justify-content: space-between;
-	align-items: center;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 }
 nav a{
 	color: #fff;
 	text-decoration: none;
 }
 .nav-links{
-	flex: 1;
+	-webkit-box-flex: 1;
+	    -ms-flex: 1;
+	        flex: 1;
 	text-align: right;
 }
 .nav-links ul li{
@@ -46,6 +63,8 @@ nav a{
 	background: #f44336;
 	display: block;
 	margin: auto;
+	-webkit-transition: 0.5s;
+	-o-transition: 0.5s;
 	transition: 0.5s;
 }
 .nav-links ul li:hover::after{
@@ -57,7 +76,9 @@ nav a{
 	position: absolute;
 	top: 50%;
 	left: 50%;
-	transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	    -ms-transform: translate(-50%, -50%);
+	        transform: translate(-50%, -50%);
 	text-align: center;
 }
 .text-box h1{
@@ -85,6 +106,8 @@ nav a{
 .hero-btn:hover{
 	border: 1px solid #f44336;
 	background: #f44336;
+	-webkit-transition: 0.5s;
+	-o-transition: 0.5s;
 	transition: 0.5s;
 }
 
@@ -107,6 +130,8 @@ nav .fa{
 		right: -200px;
 		text-align: left;
 		z-index: 2;
+		-webkit-transition: 1s;
+		-o-transition: 1s;
 		transition: 1s;
 	}
 	nav .fa{
@@ -143,16 +168,24 @@ p{
 }
 .row{
 	margin-top: 5%;
+	display:  -webkit-box;
+	display:  -ms-flexbox;
 	display:  flex;
-	justify-content: space-between;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
 }
 .course-col{
-	flex-basis: 31%;
+	-ms-flex-preferred-size: 31%;
+	    flex-basis: 31%;
 	background:  #fff3f3;
 	border-radius: 10px;
 	margin-bottom: 5%;
 	padding: 20px 12px;
-	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+	-webkit-transition: 0.5s;
+	-o-transition: 0.5s;
 	transition: 0.5s;
 }
 h3{
@@ -161,11 +194,15 @@ h3{
 	margin: 10px 0;
 }
 .course-col:hover{
-	box-shadow: 0 0 20px 0 rgba(0,0,0,0.2);
+	-webkit-box-shadow: 0 0 20px 0 rgba(0,0,0,0.2);
+	        box-shadow: 0 0 20px 0 rgba(0,0,0,0.2);
 }
 @media(max-width: 700px){
 	.row{
-		flex-direction: column;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
 	}
 }
 /*------------Top---------------*/
@@ -176,7 +213,8 @@ h3{
 	padding-top:  50px;
 }
 .top-col{
-	flex-basis: 32%;
+	-ms-flex-preferred-size: 32%;
+	    flex-basis: 32%;
 	border-radius: 10px;
 	margin-bottom: 30px;
 	position: relative;
@@ -194,6 +232,8 @@ h3{
 	position: absolute;
 	top: 0;
 	left: 0;
+	-webkit-transition: 0.5s;
+	-o-transition: 0.5s;
 	transition: 0.5s;
 }
 .layer:hover{
@@ -212,9 +252,13 @@ h3{
 	color: white;
 	bottom: 0;
 	left: 50%;
-	transform: translateX(-50%);
+	-webkit-transform: translateX(-50%);
+	    -ms-transform: translateX(-50%);
+	        transform: translateX(-50%);
 	position: absolute;
 	opacity: 0;
+	-webkit-transition: 0.8s;
+	-o-transition: 0.8s;
 	transition: 0.8s;
 }
 .layer:hover h3{
@@ -234,7 +278,8 @@ h3{
 	padding-top: 100px;
 }
 .blog-col{
-	flex-basis: 32%;
+	-ms-flex-preferred-size: 32%;
+	    flex-basis: 32%;
 	border-radius: 10px;
 	margin-bottom: 5%;
 	text-align: left;
@@ -260,14 +305,20 @@ h3{
 }
 
 .testimonial-col{
-	flex-basis: 48%;
+	-ms-flex-preferred-size: 48%;
+	    flex-basis: 48%;
 	border-radius: 10px;
 	margin-bottom: 5%;
 	text-align: left;
 	background: #fff3f3;
 	cursor: pointer;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: column;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
 	padding: 25px;
 }
 .testimonial-col:first-child{
@@ -281,8 +332,12 @@ h3{
 	width: 70px;
 	border-radius: 50%;
 	overflow: hidden;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
 }
 .testimonial-col img{
 	height: 105%;
@@ -301,6 +356,12 @@ h3{
 .cta{
 	margin: 100px auto;
 	width: 80%;
+	background: -webkit-gradient(linear,
+	 left top, left bottom,
+	 from(rgba(0,0,0,0.5)),
+	 to(rgba(0, 0, 0, 0.5))), url(images/banner2.jpg);
+	background: -o-linear-gradient(rgba(0,0,0,0.5),
+	 rgba(0, 0, 0, 0.5)), url(images/banner2.jpg);
 	background: linear-gradient(rgba(0,0,0,0.5),
 	 rgba(0, 0, 0, 0.5)), url(images/banner2.jpg);
 	background-position: center;
@@ -347,6 +408,8 @@ h3{
 .sub-header{
 	height: 50vh;
 	width: 100%;
+	background-image: -webkit-gradient(linear,left top, left bottom,from(rgba(4, 9, 30, 0.7)),to(rgba(4, 9, 30, 0.7))), url(images/4.jpg);
+	background-image: -o-linear-gradient(rgba(4, 9, 30, 0.7),rgba(4, 9, 30, 0.7)), url(images/4.jpg);
 	background-image: linear-gradient(rgba(4, 9, 30, 0.7),rgba(4, 9, 30, 0.7)), url(images/4.jpg);
 	background-position: center;
 	background-size: cover;
@@ -363,13 +426,15 @@ h3{
 	padding-bottom: 50px;
 }
 .about-col{
-	flex-basis: 48%;
+	-ms-flex-preferred-size: 48%;
+	    flex-basis: 48%;
 	padding: 30px 2px;
 }
 .about-col img{
 	width: 100%;
 	max-height: 400px;
-	object-fit: cover;
+	-o-object-fit: cover;
+	   object-fit: cover;
 }
 .about-col p{
 	padding: 15px 0 25px;
@@ -391,5 +456,7 @@ h3{
 .google-map iframe{
 	width: 100%;
 	margin: 30px auto;
-	align-self: center;
+	-ms-flex-item-align: center;
+	    -ms-grid-row-align: center;
+	    align-self: center;
 }
