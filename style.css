@@ -36,8 +36,14 @@ nav{
 	        align-items: center;
 }
 nav a{
-	color: #fff;
-	text-decoration: none;
+	height: 100%;
+	width: 100%;
+	display: inline-block;
+}
+.company-logo{
+	min-width: 130px;
+	align-content: center;
+	padding: 8px 12px;
 }
 .nav-links{
 	-webkit-box-flex: 1;
