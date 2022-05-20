@@ -414,9 +414,9 @@ h3{
 .sub-header{
 	height: 50vh;
 	width: 100%;
-	background-image: -webkit-gradient(linear,left top, left bottom,from(rgba(4, 9, 30, 0.7)),to(rgba(4, 9, 30, 0.7))), url(images/4.jpg);
-	background-image: -o-linear-gradient(rgba(4, 9, 30, 0.7),rgba(4, 9, 30, 0.7)), url(images/4.jpg);
-	background-image: linear-gradient(rgba(4, 9, 30, 0.7),rgba(4, 9, 30, 0.7)), url(images/4.jpg);
+	background-image: -webkit-gradient(linear,left top, left bottom,from(rgba(4, 9, 30, 0.7)),to(rgba(4, 9, 30, 0.7))), url(images/banner-min.jpg);
+	background-image: -o-linear-gradient(rgba(4, 9, 30, 0.7),rgba(4, 9, 30, 0.7)), url(images/banner-min.jpg);
+	background-image: linear-gradient(rgba(4, 9, 30, 0.7),rgba(4, 9, 30, 0.7)), url(images/banner-min.jpg);
 	background-position: center;
 	background-size: cover;
 	text-align: center;
@@ -425,24 +425,35 @@ h3{
 .sub-header h1{
 	margin-top: 100px;
 }
-.about-us{
+.about{
 	width: 80%;
 	margin: auto;
 	padding-top: 80px;
 	padding-bottom: 50px;
 }
-.about-col{
-	-ms-flex-preferred-size: 48%;
-	    flex-basis: 48%;
-	padding: 30px 2px;
+.about__row{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 0 5%;
+	align-items: center;
+	margin-bottom: 80px;
 }
-.about-col img{
-	width: 100%;
-	max-height: 400px;
+.about__img{
+	overflow: hidden;
+}
+.about__col img{
+
+	max-width: 100%;
+	height: auto;
 	-o-object-fit: cover;
 	   object-fit: cover;
 }
-.about-col p{
+.about__title{
+	font-size: 36px;
+	width: 80%;
+	margin-top: 20px;
+}
+.about__col p{
 	padding: 15px 0 25px;
 	font-size: 14px;
 }
@@ -455,13 +466,14 @@ h3{
 .red-btn:hover{
 	color: white;
 }
+
 .google-map h2{
 	text-align: center;
+	margin-bottom: 50px;
 }
-
 .google-map iframe{
 	width: 100%;
-	margin: 30px auto;
+	margin: 0 auto;
 	-ms-flex-item-align: center;
 	    -ms-grid-row-align: center;
 	    align-self: center;
