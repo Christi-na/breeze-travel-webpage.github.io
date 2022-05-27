@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Blog post</title>
+</head>
+ <body>
+  <header></header>
+  <main>
+      <h1>Blog Title</h1>
+      <img>
+      <p>Text text text...</p>
+  </main>
+ 
+
+
+</body>
+</html>
