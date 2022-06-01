@@ -1,4 +1,51 @@
 /* ----------Header----------- */
+.blog-wrapper p{
+    text-align: left;
+    margin: 0;
+    padding: 0;
+    padding: 6px 0;
+}
 .blog-header{
-    background-color: #ffa7a1;
+    background-color: rgb(214, 182, 142);
+}
+.blog-section{
+    padding-top: 30px;
+}
+.blog-wrapper{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.blog__pic{
+    background-color: aqua;
+    max-height: 700px;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+.blog__pic img{
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.blog__intro{
+    margin-bottom: 20px;
+}
+.blog__title{
+    padding: 10px 0;
+}
+.blog__grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    gap: 20px;
+    vertical-align: middle;
+    margin-bottom: 20px;
+}
+.blog__subtitle{
+    padding: 10px 0;
+    text-align: left;
+}
+.blog__city-text{
+    margin: auto 0;
+}
+.blog__city-img{
+    width: 100%;
 }
