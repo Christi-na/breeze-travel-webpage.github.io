@@ -4,6 +4,8 @@
     margin: 0;
     padding: 0;
     padding: 6px 0;
+    color: #333;
+    font-size: 14px;
 }
 .blog-header{
     background-color: rgb(214, 182, 142);
@@ -12,11 +14,11 @@
     padding-top: 30px;
 }
 .blog-wrapper{
-    max-width: 1000px;
+    max-width: 1050px;
+    padding: 0 25px;
     margin: 0 auto;
 }
 .blog__pic{
-    background-color: aqua;
     max-height: 700px;
     overflow: hidden;
     margin-bottom: 15px;
@@ -37,7 +39,7 @@
     grid-template-columns: 1fr 1fr ;
     gap: 20px;
     vertical-align: middle;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 .blog__subtitle{
     padding: 10px 0;
@@ -45,6 +47,9 @@
 }
 .blog__city-text{
     margin: auto 0;
+}
+.blog__pic-even{
+    order: -1;
 }
 .blog__city-img{
     width: 100%;
