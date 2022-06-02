@@ -290,6 +290,7 @@ h3{
 	margin-bottom: 5%;
 	text-align: left;
 }
+
 .blog-link{
 	text-decoration: none;
 	color: inherit;
@@ -297,9 +298,16 @@ h3{
 .blog-col img{
 	width: 100%;
 	border-radius: 10px;
+	transition: 0.2s ease;
+}
+.blog-col:hover img{
+	box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
 }
 .blog-col p{
 	padding: 0;
+ }
+ .blog-col:hover p{
+	color: #222;
 }
 .blog h3{
 	margin-top: 16px;
